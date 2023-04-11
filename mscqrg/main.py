@@ -2,6 +2,7 @@ import fitz
 import os
 import sys
 import tabulate
+import mpimg
 
 PDF_PATH = "MSC_Nastran_2022.4_Quick_Reference_Guide.pdf"
 dims = os.get_terminal_size()
@@ -119,4 +120,5 @@ def main(card):
 if __name__ == "__main__":
     from bulk_data import BULK_DATA
     entry = BULK_DATA(sys.argv[1])
+    main(sys.argv[1])
     print(entry)

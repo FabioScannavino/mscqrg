@@ -3,7 +3,7 @@ import json
 
 from tabulate import tabulate
 
-from mscqrg.load_datatypes import get_cards
+from  load_datatypes import get_cards
 
 DIR = os.path.dirname(__file__)
 PDF_PATH = os.path.join(DIR, "MSC_Nastran_2022.4_Quick_Reference_Guide.pdf")
